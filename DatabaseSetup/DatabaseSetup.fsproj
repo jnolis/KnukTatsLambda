@@ -1,0 +1,20 @@
+﻿<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+    <None Include="KnukTatsLibrary.csv" CopyToPublishDirectory="Always" />
+    <None Include="PreviousWords.csv" CopyToPublishDirectory="Always" />
+    <None Include="config.json" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.3.17.2" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.4.16" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.3" />
+    <PackageReference Include="FSharp.Core" Version="4.1.*" />
+    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.*" PrivateAssets="All" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+</Project>
